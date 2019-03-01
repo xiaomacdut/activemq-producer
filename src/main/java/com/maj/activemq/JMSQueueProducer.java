@@ -36,7 +36,7 @@ public class JMSQueueProducer{
             
             for(int i = 0; i < 10; i++){
                 // 创建需要发送的消息
-                TextMessage message = session.createTextMessage("Hello World:" + i);
+                TextMessage message = session.createTextMessage("444" + i);
                 // Text Map Bytes Stream Object
                 producer.send(message);
             }
